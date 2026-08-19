@@ -4,7 +4,7 @@ namespace Lesson.DI
 {
     public class CharacterHealth : ICharacterHealth
     {
-        public int CurrentHealth { get; private set; }
+        public int CurrentHealth { get; private set; } = 100;
         public void TakeDamage(int damage)
         {
             CurrentHealth -= damage;
